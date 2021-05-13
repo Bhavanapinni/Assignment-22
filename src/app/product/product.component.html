@@ -1,0 +1,14 @@
+<div class="text-center">
+    <h1 class="text-center">shoes</h1>
+    <h5 class="mt-4">No. of products in cart <i class="fas fa-shopping-cart"></i>:  {{productCount}}</h5>
+    <span *ngFor="let title of productSentByChild">{{title }},</span>
+ 
+</div>
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mt-5 mb-5">
+    <!--nesting product-details-->
+    <div class="col" *ngFor="let probj of products">
+    <app-product-details [productObj]=probj (myEvent)="getProductDetailsFromChild($event)"></app-product-details>
+    </div>
+</div>
+ 

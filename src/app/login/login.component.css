@@ -1,0 +1,10 @@
+h2{
+    color:rgb(8, 71, 71);
+}
+.btn{
+    background-color: rgb(82, 160, 131);
+    margin-bottom: 9rem;
+}
+.btn:hover{
+    background-color: rgb(27, 80, 61);
+}
